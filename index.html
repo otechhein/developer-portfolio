@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/carousel.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="./js/nav.js"></script>
     <script src="https://unpkg.com/pts/dist/pts.min.js"></script>
@@ -76,8 +78,6 @@
             transform: translateX(50%) rotate(45deg);
             border-radius: 2px;
         }
-
-        /*# sourceMappingURL=progress-bar.css.map */
     </style>
 </head>
 
@@ -233,7 +233,51 @@
         <!-- Aout Section End -->
         <section id="projects" class="projects">
             <div class="container">
+                <div class="heading">
+                    <h1>My Portfolio</h1>
+                    <div class="under-line"></div>
+                </div>
                 <!-- Slider -->
+                <div class="wrapper">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <div class="carousel">
+                        <!-- <div class="project-content">
+                            <img src="images/bangkok_madam.png" alt="img" draggable="false">
+                            <div class="show detail">
+                                <p class="project-name">Bangkok Madam</p>
+                                <a href="#" class="btn">Demo</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <img src="images/bangkok_madam.png" alt="img" draggable="false">
+                            <div class="show detail">
+                                <p class="project-name">Bangkok Madam</p>
+                                <a href="#" class="btn">Demo</a>
+                            </div>
+                        </div> -->
+                        <img src="images/welkids.png" alt="img" draggable="false">
+                        <!-- <div class="show project-content">
+                            <p class="project-name">Bangkok Madam</p>
+                            <a href="#" class="btn">Demo</a>
+                        </div> -->
+                        <img src="images/welnejp.png" alt="img" draggable="false">
+                        <!-- <div class="show project-content">
+                            <p class="project-name">Bangkok Madam</p>
+                            <a href="#" class="btn">Demo</a>
+                        </div> -->
+                        <img src="images/uni-help.png" alt="img" draggable="false">
+                        <!-- <div class="show project-content">
+                            <p class="project-name">Bangkok Madam</p>
+                            <a href="#" class="btn">Demo</a>
+                        </div> -->
+                        <img src="images/rating-management.png" alt="img" draggable="false">
+                        <!-- <div class="show project-content">
+                            <p class="project-name">Bangkok Madam</p>
+                            <a href="#" class="btn">Demo</a>
+                        </div> -->
+                    </div>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+                </div>
             </div>
         </section>
         <!-- Project Section End -->
@@ -298,6 +342,8 @@
             requestAnimationFrame(animate);
         });
     </script>
+    <script src="./js/index.js"></script>
+    <script src="./js/carousel.js"></script>
 </body>
 
 </html>
